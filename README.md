@@ -13,7 +13,7 @@
 
 1. **Clone โปรเจกต์นี้**
    ```sh
-   git clone <[repository-url](https://github.com/fanb1t/test-typescript.git)>
+   git clone https://github.com/fanb1t/test-typescript.git
    cd test-typescript
    ```
 
