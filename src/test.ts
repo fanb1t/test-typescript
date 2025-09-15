@@ -6,12 +6,12 @@
 // ห้ามใช้ฟังก์ชันสำเร็จรูปของsort
 
 // กำหนดอาเรย์3ตัวcollection_1, collection_2, collection_3
-const collection_1: number[] = [1, 4, 6, 8, 10];
-const collection_2: number[] = [2, 3, 5, 7, 9];
-const collection_3: number[] = [20, 18, 16, 14, 12];
+const collection_1: number[] = [];
+const collection_2: number[] = [];
+const collection_3: number[] = [];
 
 // สร้างฟังก์ชันsortเพื่อเรียงค่าจากน้อยไปมาก
-function sortArr_minTmax(arr: number[]): number[] {
+export function sortArr_minTmax(arr: number[]): number[] {
     let n = arr.length;
     for (let i = 0; i < n - 1; i++) {
         for (let j = 0; j < n - i - 1; j++) {
@@ -27,7 +27,7 @@ function sortArr_minTmax(arr: number[]): number[] {
 }
 
 // สร้างฟังก์ชันsortเพื่อเรียงค่าจากมากไปน้อย
-function sortArr_maxTmin(arr: number[]): number[] {
+export function sortArr_maxTmin(arr: number[]): number[] {
     let n = arr.length;
     for (let i = 0; i < n - 1; i++) {
         for (let j = 0; j < n - i - 1; j++) {
