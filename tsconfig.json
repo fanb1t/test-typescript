@@ -6,10 +6,13 @@
     "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
+    "module": "commonjs", // แก้จาก esnext เป็น commonjs
     "moduleResolution": "node",
     "target": "ES2020",
-    "types": [],
+    "types": [
+      "node",
+      "jest"
+    ],
     // For nodejs:
     // "lib": ["ES2020"],
     // "types": ["node"],
@@ -31,7 +34,7 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    // "verbatimModuleSyntax": true, // ลบหรือคอมเมนต์บรรทัดนี้
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
