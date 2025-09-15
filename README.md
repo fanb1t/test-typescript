@@ -13,7 +13,7 @@
 
 1. **Clone โปรเจกต์นี้**
    ```sh
-   git clone <repository-url>
+   git clone <[repository-url](https://github.com/fanb1t/test-typescript.git)>
    cd test-typescript
    ```
 
@@ -23,10 +23,6 @@
    ```
 
 3. **รันโปรเจกต์**
-   ```sh
-   npm start
-   ```
-   หรือสำหรับโหมดพัฒนา (auto reload)
    ```sh
    npm run dev
    ```
