@@ -9,3 +9,20 @@
 const collection_1: number[] = [1, 4, 6, 8, 10];
 const collection_2: number[] = [2, 3, 5, 7, 9];
 const collection_3: number[] = [20, 18, 16, 14, 12];
+
+// สร้างฟังก์ชันsortเพื่อเรียงค่าจากน้อยไปมาก
+function sortArr_minTmax(arr: number[]): number[] {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            // ใช้ ! บอก TypeScript ว่ามั่นใจว่าไม่ undefined
+            if (arr[j]! > arr[j + 1]!) {
+                let temp = arr[j]!;
+                arr[j] = arr[j + 1]!;
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
